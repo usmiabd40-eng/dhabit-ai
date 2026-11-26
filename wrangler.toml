@@ -1,5 +1,5 @@
 name = "dhabit-ai"
-compatibility_date = "2026-11-27"
+compatibility_date = "2026-11-25"
 pages_build_output_dir = "./"
 # Add secrets with: npx wrangler pages secret put OPENAI_API_KEY
 # Optional vars:
