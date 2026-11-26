@@ -1,1 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" rx="24" fill="#10251f"/><text x="50" y="69" font-size="58" text-anchor="middle" fill="#d7eee0" font-family="serif">ض</text><circle cx="74" cy="24" r="4" fill="#9dc8a9"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#164b38"/><stop offset="1" stop-color="#071e17"/></linearGradient><linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffe6a0"/><stop offset="1" stop-color="#bd8a32"/></linearGradient></defs>
+<rect width="512" height="512" rx="112" fill="url(#g)"/><rect x="13" y="13" width="486" height="486" rx="101" fill="none" stroke="url(#gold)" stroke-width="5"/>
+<path d="M256 74c-35-30-92-30-125 2-24 24-29 62-12 91l137 83 137-83c17-29 12-67-12-91-33-32-90-32-125-2Z" fill="none" stroke="#d9b45e" stroke-width="8" opacity=".85"/>
+<path d="M132 166q62-36 124 15 62-51 124-15l-8 80q-58-29-116 18-58-47-116-18Z" fill="#f5ead0" stroke="#d9b45e" stroke-width="7"/>
+<path d="M256 181v83" stroke="#c99a43" stroke-width="4"/><text x="194" y="225" font-size="33" text-anchor="middle" fill="#19382b" font-family="serif">العَرَبِيَّة</text><text x="320" y="225" font-size="31" text-anchor="middle" fill="#19382b" font-family="serif">بِدِقَّة</text>
+<text x="256" y="347" text-anchor="middle" font-size="116" font-family="serif" font-weight="bold" fill="#fff5dc">ضَ</text><text x="256" y="407" text-anchor="middle" font-size="37" font-family="Arial,sans-serif" font-weight="bold" fill="#e7c36f">DHABIT AI</text>
+<path d="M94 431h324" stroke="#cda34d" stroke-width="4" stroke-linecap="round"/>
+</svg>
