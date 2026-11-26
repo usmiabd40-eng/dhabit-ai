@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#10251f"><meta name="description" content="ضابط AI — تشكيل النصوص العربية بالحركات مع مراعاة النحو والصرف">
+<link rel="manifest" href="/manifest.webmanifest"><link rel="icon" href="/icon.svg">
+<title>ضابط AI | التشكيل العربي الذكي</title><link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="top"><a class="brand" href="#"><span class="mark">ض</span><span><b>ضَابِط AI</b><small>مساعد التشكيل العربي</small></span></a><button id="install" class="install hidden">تثبيت التطبيق</button></header>
+<main>
+<section class="hero"><div class="eyebrow">أداة عربية ذكية</div><h1>الكلمة الصحيحة تبدأ<br><em>بالحركة الصحيحة.</em></h1><p>شكّل النصوص العربية كاملةً، مع مراعاة السياق وقواعد النحو والصرف قدر الإمكان.</p></section>
+<section class="workspace">
+<div class="toolbar"><span class="label">أدخل النص العربي</span><div class="controls"><label class="switch"><input id="keep" type="checkbox" checked><span>الحفاظ على التشكيل الموجود</span></label><select id="style" aria-label="نوع التشكيل"><option value="full">تشكيل كامل</option><option value="ending">أواخر الكلمات والإعراب</option></select></div></div>
+<textarea id="source" placeholder="اكتب أو الصق النص العربي هنا…&#10;&#10;مثال: ذهب الطالب الى المدرسة وقرأ كتابا مفيدا."></textarea>
+<div class="actions"><span id="count">0 كلمة</span><div><button id="clear" class="ghost">مسح</button><button id="shape" class="primary">✦ شكّل النص</button></div></div>
+<div id="status" class="status" role="status"></div>
+<div class="result-head"><b>النص بعد التشكيل</b><span id="resultTag">بانتظار النص</span></div>
+<div id="result" class="result" aria-live="polite">سيظهر النص المشكول هنا…</div>
+<div class="actions result-actions"><span id="quality">تذكير: راجع المواضع المحتملة للّبس.</span><div><button id="copy" class="ghost" disabled>نسخ النص</button><button id="download" class="ghost" disabled>تحميل TXT</button></div></div>
+</section>
+<section class="features"><article><b>١ — فهم السياق</b><p>يحلّل الجملة كاملةً بدلاً من تشكيل كل كلمة بمعزل عن غيرها.</p></article><article><b>٢ — النحو والصرف</b><p>يراعي الوظائف النحوية وبنية الكلمات والأوزان الصرفية.</p></article><article><b>٣ — مراجعة بشرية</b><p>التشكيل الآلي مساعد، وقد يحتاج النص المتخصص إلى تدقيق لغوي.</p></article></section>
+<section class="note"><b>تنبيه مهم</b><p>لا تعتمد على التشكيل الآلي وحده في نصوص القرآن الكريم أو الأحاديث أو المواد التعليمية المنشورة. يجب مطابقة النص القرآني مع مصحف موثوق وعدم تغيير رسمه أو ألفاظه.</p></section>
+</main><footer>ضَابِط AI · إصدار تجريبي</footer>
+<script src="/app.js"></script>
+</body></html>
