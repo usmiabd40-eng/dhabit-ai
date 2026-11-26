@@ -32,3 +32,5 @@ This is an installable Progressive Web App (PWA). Deploy it over HTTPS, open the
 
 ## Accuracy and safety
 The model output is a best-effort linguistic suggestion, not a guaranteed scholarly i'rab. Ambiguous Arabic forms require context and expert review. Do not treat generated text as a verified Qur'anic or hadith transcription; compare sacred texts against an authoritative edition.
+
+Cloudflare Pages compatibility date is pinned to `2026-11-25` for the current deployment environment.
