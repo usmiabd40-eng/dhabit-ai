@@ -9,3 +9,46 @@
 @media(max-width:800px){.sidebar{width:235px}.suggestion-grid{gap:8px}.suggestion{padding:13px}}
 @media(max-width:620px){html,body{height:100%;overflow:hidden}.sidebar{position:fixed;z-index:40;top:0;bottom:0;right:0;width:min(285px,84vw);transform:translateX(105%);transition:transform .22s;box-shadow:-15px 0 45px #0002}.sidebar.open{transform:translateX(0)}.main-panel{width:100%;height:100dvh}.topbar{height:60px;padding:0 14px}.mobile-menu{display:block}.top-title{margin-right:10px;margin-left:auto}.top-title b{font-size:13px}.top-title small{font-size:9px}.top-icon{width:35px;height:35px}.welcome{width:calc(100% - 30px);padding:18px 0 12px}.welcome-mark{width:64px;height:64px;margin-bottom:12px}.welcome h1{font-size:25px}.welcome>p{font-size:12px}.suggestion-grid{grid-template-columns:1fr;gap:8px;margin:19px auto 13px}.suggestion{min-height:0;padding:11px 13px 11px 42px}.suggestion-icon{float:right;margin:0 0 0 10px;width:34px;height:34px}.suggestion b{padding-top:2px}.suggestion small{margin-top:2px}.suggestion-arrow{top:20px}.welcome-note{font-size:9px}.messages{width:calc(100% - 24px);padding:18px 0;gap:18px}.message{gap:8px}.avatar{width:28px;height:28px}.bubble-wrap{max-width:calc(100% - 36px)}.bubble{font-size:15px;padding:11px 13px}.message.user .bubble{font-size:13px}.composer-wrap{width:calc(100% - 18px);padding:7px 0 7px}.composer{padding:9px 10px 8px;border-radius:14px}.composer textarea{font-size:14px;min-height:40px;padding:5px}.composer-controls{align-items:flex-end}.composer-options{gap:6px;flex-wrap:wrap}.mode-label{display:none}.composer-options select{max-width:145px;font-size:9px;padding:7px 6px}.preserve{font-size:9px}.composer-send{gap:6px}.composer-send>span{display:none}.send-button{min-width:62px;height:35px;font-size:10px}.composer-foot{font-size:8px;line-height:1.5}.composer-foot span:last-child{display:none}.app-footer{height:22px}.about-dialog{padding:24px 19px}}
 @media(max-width:360px){.composer-options select{max-width:125px}.preserve{font-size:8px}.welcome h1{font-size:22px}.suggestion small{font-size:9px}}
+
+/* Professional icon system and theme controls */
+.ui-icon{width:17px;height:17px;display:inline-block;flex:none;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;vertical-align:middle}
+.new-chat{display:flex;align-items:center;gap:9px}.new-chat .ui-icon{width:17px;height:17px;color:var(--gold)}
+.side-link{display:flex;align-items:center;gap:10px}.side-link .ui-icon{width:17px;height:17px;color:#d9bd7a}
+.welcome-pill .ui-icon{width:14px;height:14px;color:#ae8b45}
+.suggestion-icon .ui-icon{width:18px;height:18px}
+.top-actions{display:flex;align-items:center;gap:8px}.top-icon{display:grid;place-items:center}.top-icon .ui-icon{width:17px;height:17px}.theme-moon{display:none}
+body[data-theme="dark"]{--ink:#e7eee9;--muted:#9aa99f;--line:#2a4035;--canvas:#101a15;--white:#17251e;--user:#20372a;background:var(--canvas);color:var(--ink)}
+body[data-theme="dark"] .main-panel,body[data-theme="dark"] .chat-main{background:#101a15}
+body[data-theme="dark"] .topbar{background:#14231bec;border-color:#293e33;color:#e7eee9}
+body[data-theme="dark"] .top-title small{color:#8fa297}
+body[data-theme="dark"] .top-icon,body[data-theme="dark"] .mobile-menu{background:#1b2c22;border-color:#34483b;color:#dce8df}
+body[data-theme="dark"] .welcome h1{color:#e8f0e9}
+body[data-theme="dark"] .welcome h1 span{color:#9ac5a2}
+body[data-theme="dark"] .welcome>p,body[data-theme="dark"] .welcome-note{color:#9aa99f}
+body[data-theme="dark"] .welcome-pill{background:#20392b;color:#b8d2bc}
+body[data-theme="dark"] .suggestion{background:#17251e;border-color:#2c4034;color:#e4ece6}
+body[data-theme="dark"] .suggestion:hover{border-color:#557d60;box-shadow:0 9px 24px #0003}
+body[data-theme="dark"] .suggestion-icon{background:#233b2c;color:#b5d4b9}
+body[data-theme="dark"] .suggestion small{color:#9aa99f}
+body[data-theme="dark"] .messages .bubble{background:#17251e;border-color:#2b4034;color:#e3ece5}
+body[data-theme="dark"] .message.user .bubble{background:#20372a;border-color:#2d4938}
+body[data-theme="dark"] .avatar{background:#263d2e;color:#c2dfc6}
+body[data-theme="dark"] .message.user .avatar{background:#315a40;color:#f0d99c}
+body[data-theme="dark"] .message-name,body[data-theme="dark"] .typing{color:#9baea0}
+body[data-theme="dark"] .answer-tools button{background:#1b2b22;border-color:#33483a;color:#bdcabe}
+body[data-theme="dark"] .composer{background:#17251e;border-color:#314638;box-shadow:0 8px 30px #0002}
+body[data-theme="dark"] .composer textarea{color:#edf4ee}
+body[data-theme="dark"] .composer textarea::placeholder{color:#809187}
+body[data-theme="dark"] .composer-controls{border-color:#2a3b30}
+body[data-theme="dark"] .composer-options select{background:#203127;border-color:#3a5041;color:#d2e2d4}
+body[data-theme="dark"] .preserve,body[data-theme="dark"] .mode-label{color:#9cad9f}
+body[data-theme="dark"] .composer-foot,body[data-theme="dark"] .composer-send>span,body[data-theme="dark"] .app-footer{color:#82958a}
+body[data-theme="dark"] .app-footer span:first-child{color:#a8c3ac}
+body[data-theme="dark"] .theme-sun{display:none}
+body[data-theme="dark"] .theme-moon{display:block}
+body[data-theme="dark"] .about-dialog{background:#17251e;color:#e6eee8}
+body[data-theme="dark"] .about-dialog>p:not(.about-tag){color:#a9b9ad}
+body[data-theme="dark"] .about-mini-grid div{background:#203127}
+body[data-theme="dark"] .about-mini-grid span{color:#a9b9ad}
+body[data-theme="dark"] .close-modal{color:#c2d1c5}
+@media(max-width:620px){.top-actions{gap:6px}.top-icon{width:35px;height:35px}.top-icon .ui-icon{width:16px;height:16px}}
