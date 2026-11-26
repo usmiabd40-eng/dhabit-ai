@@ -2,62 +2,63 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#0b2119"><meta name="description" content="ضَابِط AI — مساعدك الذكي للتشكيل العربي وفهم السياق.">
+<meta name="theme-color" content="#f5f7f4"><meta name="description" content="ضَابِط AI — مساعد متخصص في التشكيل العربي.">
 <link rel="manifest" href="/manifest.webmanifest"><link rel="icon" type="image/svg+xml" href="/brand/dhabit-mark.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
 <title>ضَابِط AI — مساعد التشكيل العربي</title><link rel="stylesheet" href="/style.css">
 </head>
 <body>
 <div class="app-shell">
 <aside class="sidebar" id="sidebar">
-  <div class="side-brand"><img src="/brand/dhabit-mark.svg" alt=""><div><b>ضَابِط <i>AI</i></b><small>مساعد اللغة العربية</small></div></div>
-  <button class="new-chat" id="newChat"><svg class="ui-icon" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg> محادثة جديدة</button>
-  <div class="side-label">مساحة العمل</div>
-  <button class="side-link active"><svg class="ui-icon" viewBox="0 0 24 24"><path d="M12 3 4 7v10l8 4 8-4V7l-8-4Z"/><path d="m8 12 2.5 2.5L16 9"/></svg> المساعد</button>
-  <button class="side-link" id="aboutToggle"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5m0-8h.01"/></svg> عن ضابط AI</button>
-  <div class="history-area"><div class="side-label">الأخيرة</div><div id="historyList" class="history-list"><div class="history-empty">ستظهر محادثاتك هنا</div></div></div>
-  <div class="sidebar-bottom"><div class="status-dot"></div><span>مساعد التشكيل جاهز</span><span class="version">v1.0</span></div>
+  <a class="brand" href="/" aria-label="ضابط AI">
+    <span class="brand-symbol">ض</span><span class="brand-word"><b>ضَابِط</b><small>ARABIC AI WORKSPACE</small></span>
+  </a>
+  <button class="new-chat" id="newChat"><svg viewBox="0 0 24 24" class="icon"><path d="M12 5v14M5 12h14"/></svg><span>محادثة جديدة</span><kbd>＋</kbd></button>
+  <div class="side-caption">المساحة</div>
+  <button class="nav-item active" id="assistantNav"><svg viewBox="0 0 24 24" class="icon"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H18a2 2 0 0 1 2 2v13a2 2 0 0 1-2 2H6.5A2.5 2.5 0 0 1 4 17.5z"/><path d="M4 17a2 2 0 0 1 2-2h14M8 8h8m-8 4h5"/></svg>المساعد</button>
+  <button class="nav-item" id="aboutToggle"><svg viewBox="0 0 24 24" class="icon"><circle cx="12" cy="12" r="9"/><path d="M12 11v5m0-8h.01"/></svg>عن ضابط AI</button>
+  <div class="history-block"><div class="side-caption history-caption">المحادثات الأخيرة</div><div id="historyList" class="history-list"><p class="history-empty">ستظهر محادثاتك هنا</p></div></div>
+  <div class="sidebar-bottom"><span class="ready-indicator"></span><span>جاهز لمساعدتك</span><span class="build-label">BETA</span></div>
 </aside>
 <div class="main-panel">
 <header class="topbar">
-  <button class="mobile-menu" id="menuToggle" aria-label="فتح القائمة">☰</button>
-  <div class="top-title"><span class="online-dot"></span><div><b>مساعد ضابط</b><small>Arabic. Accurate. With Context.</small></div></div>
-  <div class="top-actions"><button class="top-icon" id="exportChat" title="تصدير المحادثة" aria-label="تصدير المحادثة"><svg class="ui-icon" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5"/><path d="M5 17v3h14v-3"/></svg></button><button class="top-icon" id="themeToggle" title="تغيير المظهر" aria-label="تغيير المظهر"><svg class="ui-icon theme-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg><svg class="ui-icon theme-moon" viewBox="0 0 24 24"><path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5 8.5 8.5 0 1 0 20.5 14.2Z"/></svg></button><button class="top-icon" id="clearChat" title="محادثة جديدة" aria-label="محادثة جديدة"><svg class="ui-icon" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></button></div>
+  <button class="mobile-menu icon-button" id="menuToggle" aria-label="القائمة"><svg class="icon" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  <div class="top-brand"><span class="top-brand-mark">ض</span><div><b>ضَابِط AI</b><small>مساعد التشكيل العربي</small></div></div>
+  <div class="topbar-end"><span class="availability"><i></i> متاح الآن</span><button class="icon-button" id="themeToggle" aria-label="تغيير المظهر" title="تغيير المظهر"><svg class="icon sun-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg><svg class="icon moon-icon" viewBox="0 0 24 24"><path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5 8.5 8.5 0 1 0 20.5 14.2Z"/></svg></button>
+  <button class="icon-button desktop-new" id="clearChat" aria-label="محادثة جديدة" title="محادثة جديدة"><svg class="icon" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></button></div>
 </header>
-<main class="chat-main">
+<main class="work-area">
   <section class="welcome" id="welcome">
-    
-    <div class="welcome-pill"><svg class="ui-icon" viewBox="0 0 24 24"><path d="m12 3 1.9 5.8L20 11l-6.1 2.2L12 19l-1.9-5.8L4 11l6.1-2.2L12 3Z"/></svg> مساعدك الذكي للغة العربية</div>
-    <h1>مرحبًا بك في <span>ضَابِط AI</span></h1>
-    <p>أرسل نصك العربي، وسأساعدك في تشكيله بدقة مع مراعاة السياق وقواعد النحو والصرف.</p>
-    <div class="suggestion-grid">
-      <button class="suggestion" data-prompt="ذهب الطالب الى المدرسة وقرأ كتابا مفيدا."><span class="suggestion-icon"><svg class="ui-icon" viewBox="0 0 24 24"><path d="M4 19h16M7 16l5-11 5 11m-8-5h6"/></svg></span><b>شكّل نصًا بالكامل</b><small>أضف الحركات إلى جميع الكلمات</small><span class="suggestion-arrow">↙</span></button>
-      <button class="suggestion" data-prompt="إنما الأعمال بالنيات وإنما لكل امرئ ما نوى."><span class="suggestion-icon"><svg class="ui-icon" viewBox="0 0 24 24"><path d="M5 7h14M5 12h14M5 17h9"/><path d="m16 15 2 2 3-4"/></svg></span><b>اضبط أواخر الكلمات</b><small>ركّز على الإعراب ونهايات الكلمات</small><span class="suggestion-arrow">↙</span></button>
-      <button class="suggestion" data-prompt="العلم نور والجهل ظلام."><span class="suggestion-icon"><svg class="ui-icon" viewBox="0 0 24 24"><path d="m12 3 1.9 5.8L20 11l-6.1 2.2L12 19l-1.9-5.8L4 11l6.1-2.2L12 3Z"/></svg></span><b>جرّب مثالًا سريعًا</b><small>شاهد كيف يعمل ضابط AI</small><span class="suggestion-arrow">↙</span></button>
+    <div class="eyebrow"><span></span> أداة متخصصة في اللغة العربية</div>
+    <h1>اجعل النص العربي <em>أوضح وأدق.</em></h1>
+    <p>تشكيل واعٍ بالسياق، يستند إلى قواعد النحو والصرف.</p>
+    <div class="examples-label">ابدأ بمثال</div>
+    <div class="example-row">
+      <button class="example-chip" data-prompt="ذهب الطالب إلى المدرسة وقرأ كتابًا مفيدًا." data-mode="full"><span>عَ</span> تشكيل كامل</button>
+      <button class="example-chip" data-prompt="إنما الأعمال بالنيات وإنما لكل امرئ ما نوى." data-mode="ending"><span>ـُ</span> أواخر الكلمات</button>
+      <button class="example-chip" data-prompt="العلم نور والجهل ظلام." data-mode="full"><span>↗</span> جرّب مثالًا</button>
     </div>
-    <div class="welcome-note">يمكنك أيضًا لصق فقرة طويلة في مربع الكتابة أدناه.</div>
   </section>
   <section class="conversation hidden" id="conversation" aria-live="polite"><div id="messages" class="messages"></div></section>
-  <div class="composer-wrap">
-    <div class="composer">
-      <textarea id="source" rows="1" maxlength="12000" placeholder="اكتب أو الصق النص العربي هنا..."></textarea>
-      <div class="composer-controls">
-        <div class="composer-options">
-          <label class="mode-label" for="style">النمط</label>
-          <select id="style" aria-label="نوع التشكيل"><option value="full">التشكيل الكامل</option><option value="ending">أواخر الكلمات والإعراب</option></select>
-          <label class="preserve"><input id="keep" type="checkbox" checked><span>حافظ على الحركات</span></label>
-        </div>
-        <div class="composer-send"><span id="count">0 / 12,000</span><button id="shape" class="send-button" aria-label="إرسال النص"><span>إرسال</span><b>↑</b></button></div>
+  <section class="editor-panel" aria-label="محرر النص العربي">
+    <div class="editor-topline"><div class="editor-heading"><span class="editor-heading-icon"><svg class="icon" viewBox="0 0 24 24"><path d="M4 19h16M7 16l5-11 5 11m-8-5h6"/></svg></span><div><b>النص العربي</b><small>أدخل النص الذي تريد ضبطه</small></div></div><button class="text-action" id="clearInput" type="button">مسح النص <svg class="icon" viewBox="0 0 24 24"><path d="M4 7h16M10 11v6m4-6v6M6 7l1 14h10l1-14M9 7V4h6v3"/></svg></button></div>
+    <textarea id="source" rows="4" maxlength="12000" placeholder="اكتب أو الصق النص العربي هنا..."></textarea>
+    <div class="editor-bottom">
+      <div class="editor-settings">
+        <div class="mode-switch" role="group" aria-label="نوع التشكيل"><button class="mode-option selected" data-mode="full" type="button">التشكيل الكامل</button><button class="mode-option" data-mode="ending" type="button">أواخر الكلمات</button></div>
+        <label class="preserve-control"><input id="keep" type="checkbox" checked><span class="switch"></span><span>الحفاظ على الحركات الموجودة</span></label>
       </div>
+      <div class="submit-area"><span id="count">0 / 12,000</span><button id="shape" class="submit-button" type="button"><span>تشكيل النص</span><svg class="icon" viewBox="0 0 24 24"><path d="M7 17 17 7M7 7h10v10"/></svg></button></div>
     </div>
-    <div class="composer-foot"><span>ضَابِط AI قد يخطئ في المواضع الملتبسة؛ راجع النصوص المهمة.</span><span>مدعوم بالذكاء الاصطناعي</span></div>
-    <div id="status" class="status" role="status" aria-live="polite"></div>
-  </div>
+    <div class="editor-foot"><span><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v5m0-8h.01"/></svg> حتى ١٢٬٠٠٠ حرف لكل طلب</span><span>Enter للإرسال · Shift + Enter لسطر جديد</span></div>
+  </section>
+  <div class="status-line" id="status" role="status" aria-live="polite"></div>
+  <footer class="workspace-footer"><span>ضَابِط AI</span><span>صُمّم لخدمة اللغة العربية</span><span>راجع النصوص الشرعية من مصادرها المعتمدة.</span></footer>
 </main>
-<footer class="app-footer"><span>ضَابِط AI</span><span>مساعد ذكي للتشكيل العربي</span></footer>
 </div>
 </div>
-<div class="about-modal hidden" id="aboutModal" role="dialog" aria-modal="true" aria-labelledby="aboutTitle"><div class="about-dialog"><button id="closeAbout" class="close-modal" aria-label="إغلاق">×</button><img src="/brand/dhabit-mark.svg" alt=""><h2 id="aboutTitle">ضَابِط AI</h2><p class="about-tag">Arabic. Accurate. With Context.</p><p>Dhabit AI is an AI-powered Arabic diacritization assistant. It adds tashkeel using contextual understanding, Arabic grammar (النحو), and morphology (الصرف).</p><div class="about-mini-grid"><div><b>مهمتنا</b><span>جعل العربية المضبوطة أقرب للجميع.</span></div><div><b>رؤيتنا</b><span>أن نكون أداة موثوقة لخدمة اللغة العربية.</span></div></div><small>تنبيه: لا تعتمد على التشكيل الآلي وحده في القرآن الكريم أو الحديث الشريف.</small></div></div>
+<div class="mobile-scrim" id="scrim"></div>
+<div class="about-modal hidden" id="aboutModal" role="dialog" aria-modal="true" aria-labelledby="aboutTitle"><div class="about-dialog"><button id="closeAbout" class="close-modal" aria-label="إغلاق">×</button><span class="about-mark">ض</span><h2 id="aboutTitle">ضَابِط AI</h2><p class="about-tag">Arabic. Accurate. With Context.</p><p>مساعد ذكي لتشكيل النصوص العربية، يعتمد على فهم السياق وقواعد النحو والصرف لمساعدتك على كتابة العربية وقراءتها بوضوح أكبر.</p><div class="about-mini-grid"><div><b>مهمتنا</b><span>جعل العربية المضبوطة أقرب للجميع.</span></div><div><b>رؤيتنا</b><span>أداة موثوقة للطلاب والمعلمين والباحثين.</span></div></div><small>التشكيل الآلي قابل للخطأ، خصوصًا في النصوص التي تحتمل أكثر من وجه.</small></div></div>
 <script src="/app.js"></script>
 </body></html>
