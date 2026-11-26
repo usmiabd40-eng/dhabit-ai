@@ -1,41 +1,28 @@
 <!doctype html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#10251f"><meta name="description" content="ضابط AI — تشكيل النصوص العربية بالحركات مع مراعاة النحو والصرف">
-<link rel="manifest" href="/manifest.webmanifest"><link rel="icon" href="/icon.svg">
-<title>ضابط AI | التشكيل العربي الذكي</title><link rel="stylesheet" href="/style.css">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0b2119"><meta name="description" content="ضَابِط AI — تشكيل النصوص العربية بذكاء مع مراعاة السياق والنحو والصرف.">
+<link rel="manifest" href="/manifest.webmanifest"><link rel="icon" href="/icon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+<title>ضَابِط AI — التشكيل العربي الذكي</title><link rel="stylesheet" href="/style.css">
 </head>
 <body>
-<header class="top"><a class="brand" href="#"><span class="mark">ض</span><span><b>ضَابِط AI</b><small>مساعد التشكيل العربي</small></span></a><button id="install" class="install hidden">تثبيت التطبيق</button></header>
+<header class="site-header"><a class="brand" href="/" aria-label="Dhabit AI home"><img src="/brand/dhabit-mark.svg" alt="" class="brand-mark"><span><b>ضَابِط <i>AI</i></b><small>Arabic diacritization assistant</small></span></a><nav class="nav-links"><a href="#workspace">المشكّل</a><a href="#features">المميزات</a><a href="#about">عن ضابط</a></nav><button id="install" class="install hidden">تثبيت التطبيق <span>↓</span></button></header>
 <main>
-<section class="hero"><div class="eyebrow">أداة عربية ذكية</div><h1>الكلمة الصحيحة تبدأ<br><em>بالحركة الصحيحة.</em></h1><p>شكّل النصوص العربية كاملةً، مع مراعاة السياق وقواعد النحو والصرف قدر الإمكان.</p></section>
-<section class="workspace">
-<div class="toolbar"><span class="label">أدخل النص العربي</span><div class="controls"><label class="switch"><input id="keep" type="checkbox" checked><span>الحفاظ على التشكيل الموجود</span></label><select id="style" aria-label="نوع التشكيل"><option value="full">تشكيل كامل</option><option value="ending">أواخر الكلمات والإعراب</option></select></div></div>
-<textarea id="source" placeholder="اكتب أو الصق النص العربي هنا…&#10;&#10;مثال: ذهب الطالب الى المدرسة وقرأ كتابا مفيدا."></textarea>
-<div class="actions"><span id="count">0 كلمة</span><div><button id="clear" class="ghost">مسح</button><button id="shape" class="primary">✦ شكّل النص</button></div></div>
-<div id="status" class="status" role="status"></div>
-<div class="result-head"><b>النص بعد التشكيل</b><span id="resultTag">بانتظار النص</span></div>
-<div id="result" class="result" aria-live="polite">سيظهر النص المشكول هنا…</div>
-<div class="actions result-actions"><span id="quality">تذكير: راجع المواضع المحتملة للّبس.</span><div><button id="copy" class="ghost" disabled>نسخ النص</button><button id="download" class="ghost" disabled>تحميل TXT</button></div></div>
+<section class="hero">
+<div class="hero-copy"><div class="eyebrow"><span class="pulse"></span> مساعدك الذكي للغة العربية</div><h1>امنح كلماتك<br><span>صوتها الصحيح.</span></h1><p>تشكيل عربي ذكي يفهم السياق، ويراعي قواعد النحو والصرف، ليمنح نصوصك وضوحًا أكبر.</p><div class="hero-actions"><a class="hero-cta" href="#workspace">ابدأ التشكيل <span>←</span></a><span class="hero-note">بسيط · سريع · مدعوم بالذكاء الاصطناعي</span></div><div class="trust-row"><span>✦ تشكيل كامل</span><span>✦ أواخر الكلمات</span><span>✦ فهم السياق</span></div></div>
+<div class="hero-art"><div class="art-glow"></div><img src="/brand/dhabit-mark.svg" alt="شعار ضابط AI" class="hero-logo"><div class="floating-chip chip-top">النحو والصرف</div><div class="floating-chip chip-bottom">AI · Arabic</div></div>
 </section>
-<section class="features"><article><b>١ — فهم السياق</b><p>يحلّل الجملة كاملةً بدلاً من تشكيل كل كلمة بمعزل عن غيرها.</p></article><article><b>٢ — النحو والصرف</b><p>يراعي الوظائف النحوية وبنية الكلمات والأوزان الصرفية.</p></article><article><b>٣ — مراجعة بشرية</b><p>التشكيل الآلي مساعد، وقد يحتاج النص المتخصص إلى تدقيق لغوي.</p></article></section>
-
-<section class="about" id="about" aria-labelledby="about-title">
-  <div class="about-heading"><span class="about-kicker">ABOUT DHABIT AI</span><h2 id="about-title">ضَابِط AI — Dhabit AI</h2><p class="about-tagline">Arabic. Accurate. With Context.</p></div>
-  <p class="about-intro">Dhabit AI is an AI-powered Arabic diacritization platform designed to add accurate tashkeel (حركات) to Arabic text using contextual understanding, Arabic grammar (النحو), and morphology (الصرف).</p>
-  <div class="about-grid">
-    <article><h3>Our Mission</h3><p>To make correctly vocalized Arabic accessible to everyone through intelligent technology.</p></article>
-    <article><h3>Our Vision</h3><p>To become a trusted Arabic language tool for students, teachers, researchers, writers, and Arabic learners worldwide.</p></article>
-    <article><h3>Brand Promise</h3><p>Helping people write and read Arabic with greater clarity and confidence.</p></article>
-  </div>
-  <div class="about-details">
-    <div><h3>Core Features</h3><ul><li>Full Arabic diacritization (التشكيل الكامل).</li><li>Word-ending diacritization (تشكيل أواخر الكلمات).</li><li>Context-aware Arabic processing.</li><li>Copy and download results.</li><li>Web and Android accessibility.</li></ul></div>
-    <div><h3>Who It’s For</h3><ul><li>Arabic students and learners.</li><li>Teachers and educators.</li><li>Islamic studies students.</li><li>Researchers and writers.</li><li>Arabic content creators.</li></ul></div>
-  </div>
-  <div class="about-footer"><span><b>Brand personality</b> Intelligent · Educational · Reliable · Simple · Modern</span><span><b>Category</b> Artificial Intelligence / Arabic Language Technology</span><a href="https://dhabit-ai.pages.dev">dhabit-ai.pages.dev</a></div>
+<section class="workspace" id="workspace">
+<div class="section-top"><div><span class="section-kicker">WORKSPACE / مساحة العمل</span><h2>شكّل نصك العربي</h2><p>أدخل النص، اختر نمط التشكيل، ودع ضابط يتولى الباقي.</p></div><span class="secure-label"><span>●</span> معالجة ذكية</span></div>
+<div class="editor-shell"><div class="editor-toolbar"><label for="source">النص الأصلي</label><div class="editor-tools"><label class="preserve"><input id="keep" type="checkbox" checked><span>حافظ على الحركات الموجودة</span></label><select id="style" aria-label="نوع التشكيل"><option value="full">التشكيل الكامل</option><option value="ending">أواخر الكلمات والإعراب</option></select></div></div>
+<textarea id="source" maxlength="12000" placeholder="اكتب أو الصق النص العربي هنا…&#10;&#10;مثال: ذهب الطالب الى المدرسة وقرأ كتابا مفيدا."></textarea>
+<div class="editor-bottom"><span id="count">0 / 12,000 حرف</span><div class="editor-actions"><button id="clear" class="btn-light">مسح النص</button><button id="shape" class="btn-primary"><span>✦</span> شكّل النص</button></div></div>
+<div id="status" class="status" role="status" aria-live="polite"></div></div>
+<div class="output-card"><div class="output-heading"><div><span class="output-icon">✧</span><div><b>النص المشكول</b><small id="resultTag">بانتظار النص</small></div></div><div class="output-actions"><button id="copy" class="btn-light" disabled>نسخ النص</button><button id="download" class="btn-light" disabled>تحميل TXT</button></div></div><div id="result" class="result" aria-live="polite">ستظهر النتيجة هنا بعد اكتمال التشكيل.</div><div class="output-foot"><span>✦ راجع الكلمات التي تحتمل أكثر من وجه إعرابي.</span><span class="powered">DHABIT AI</span></div></div>
 </section>
-<section class="note"><b>تنبيه مهم</b><p>لا تعتمد على التشكيل الآلي وحده في نصوص القرآن الكريم أو الأحاديث أو المواد التعليمية المنشورة. يجب مطابقة النص القرآني مع مصحف موثوق وعدم تغيير رسمه أو ألفاظه.</p></section>
-</main><footer>ضَابِط AI · إصدار تجريبي</footer>
-<script src="/app.js"></script>
+<section class="features-section" id="features"><div class="center-heading"><span class="section-kicker">BUILT FOR ARABIC</span><h2>أدوات تفهم جمال اللغة</h2><p>تجربة مركّزة تساعدك على كتابة العربية وقراءتها بثقة أكبر.</p></div><div class="feature-grid"><article class="feature-card"><span class="feature-number">01</span><div class="feature-icon">عَ</div><h3>التشكيل الكامل</h3><p>أضف الحركات إلى الكلمات مع مراعاة تركيب الجملة وسياقها.</p></article><article class="feature-card"><span class="feature-number">02</span><div class="feature-icon">ـُ</div><h3>أواخر الكلمات والإعراب</h3><p>ركّز على ضبط أواخر الكلمات عند دراسة الإعراب والنحو.</p></article><article class="feature-card"><span class="feature-number">03</span><div class="feature-icon">✧</div><h3>فهم السياق</h3><p>حلّل الجملة كوحدة واحدة بدل التعامل مع كل كلمة بمعزل.</p></article><article class="feature-card"><span class="feature-number">04</span><div class="feature-icon">⇩</div><h3>نسخ وتحميل بسهولة</h3><p>احتفظ بالنص المشكول وانقله إلى مستنداتك ومشاريعك.</p></article></div></section>
+<section class="about-section" id="about"><div class="about-brand"><img src="/brand/dhabit-mark.svg" alt="Dhabit AI logo"><div><span class="section-kicker">OUR IDENTITY</span><h2>ضَابِط AI — Dhabit AI</h2><p class="tagline">Arabic. Accurate. With Context.</p></div></div><div class="about-copy"><p>Dhabit AI is an AI-powered Arabic diacritization platform designed to add accurate tashkeel (حركات) to Arabic text using contextual understanding, Arabic grammar (النحو), and morphology (الصرف).</p><div class="about-columns"><div><h3>Our Mission</h3><p>To make correctly vocalized Arabic accessible to everyone through intelligent technology.</p><h3>Our Vision</h3><p>To become a trusted Arabic language tool for students, teachers, researchers, writers, and Arabic learners worldwide.</p></div><div><h3>Our Brand Promise</h3><p>Helping people write and read Arabic with greater clarity and confidence.</p><h3>Who It’s For</h3><p>Students, educators, Islamic studies learners, researchers, writers, and Arabic content creators.</p></div></div></div></section>
+<section class="notice"><span>!</span><p><b>تنبيه علمي:</b> التشكيل الآلي مساعد وقد يخطئ في المواضع الملتبسة. يجب مراجعة النصوص المتخصصة، وعدم اعتماد الناتج وحده في القرآن الكريم أو الحديث الشريف أو المواد التعليمية المنشورة.</p></section>
+</main><footer><a class="footer-brand" href="/">ضَابِط AI</a><span>مساعد ذكي للغة العربية</span><span>© 2026 Dhabit AI</span></footer><script src="/app.js"></script>
 </body></html>
