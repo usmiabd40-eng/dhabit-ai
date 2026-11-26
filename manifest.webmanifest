@@ -1,18 +1,14 @@
 {
-  "name": "ضابط AI",
-  "short_name": "ضابط",
+  "name": "ضَابِط AI — Dhabit AI",
+  "short_name": "ضَابِط AI",
+  "description": "مساعد ذكي لتشكيل النصوص العربية",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#f5f7f4",
-  "theme_color": "#10251f",
+  "background_color": "#f7f8f5",
+  "theme_color": "#0b2119",
   "lang": "ar",
   "dir": "rtl",
   "icons": [
-    {
-      "src": "/icon.svg",
-      "sizes": "any",
-      "type": "image/svg+xml",
-      "purpose": "any maskable"
-    }
+    { "src": "/brand/dhabit-mark.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
   ]
 }
