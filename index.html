@@ -12,10 +12,10 @@
 <div class="app-shell">
 <aside class="sidebar" id="sidebar">
   <div class="side-brand"><img src="/brand/dhabit-mark.svg" alt=""><div><b>ضَابِط <i>AI</i></b><small>مساعد اللغة العربية</small></div></div>
-  <button class="new-chat" id="newChat"><span>＋</span> محادثة جديدة</button>
+  <button class="new-chat" id="newChat"><svg class="ui-icon" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg> محادثة جديدة</button>
   <div class="side-label">مساحة العمل</div>
-  <button class="side-link active"><span>✧</span> المساعد</button>
-  <button class="side-link" id="aboutToggle"><span>ⓘ</span> عن ضابط AI</button>
+  <button class="side-link active"><svg class="ui-icon" viewBox="0 0 24 24"><path d="M12 3 4 7v10l8 4 8-4V7l-8-4Z"/><path d="m8 12 2.5 2.5L16 9"/></svg> المساعد</button>
+  <button class="side-link" id="aboutToggle"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5m0-8h.01"/></svg> عن ضابط AI</button>
   <div class="history-area"><div class="side-label">الأخيرة</div><div id="historyList" class="history-list"><div class="history-empty">ستظهر محادثاتك هنا</div></div></div>
   <div class="sidebar-bottom"><div class="status-dot"></div><span>مساعد التشكيل جاهز</span><span class="version">v1.0</span></div>
 </aside>
@@ -23,18 +23,18 @@
 <header class="topbar">
   <button class="mobile-menu" id="menuToggle" aria-label="فتح القائمة">☰</button>
   <div class="top-title"><span class="online-dot"></span><div><b>مساعد ضابط</b><small>Arabic. Accurate. With Context.</small></div></div>
-  <button class="top-icon" id="clearChat" title="محادثة جديدة" aria-label="محادثة جديدة">＋</button>
+  <div class="top-actions"><button class="top-icon" id="exportChat" title="تصدير المحادثة" aria-label="تصدير المحادثة"><svg class="ui-icon" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5"/><path d="M5 17v3h14v-3"/></svg></button><button class="top-icon" id="themeToggle" title="تغيير المظهر" aria-label="تغيير المظهر"><svg class="ui-icon theme-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg><svg class="ui-icon theme-moon" viewBox="0 0 24 24"><path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5 8.5 8.5 0 1 0 20.5 14.2Z"/></svg></button><button class="top-icon" id="clearChat" title="محادثة جديدة" aria-label="محادثة جديدة"><svg class="ui-icon" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></button></div>
 </header>
 <main class="chat-main">
   <section class="welcome" id="welcome">
-    <div class="welcome-mark"><img src="/brand/dhabit-mark.svg" alt="ضابط AI"></div>
-    <div class="welcome-pill"><span>✦</span> مساعدك الذكي للغة العربية</div>
+    
+    <div class="welcome-pill"><svg class="ui-icon" viewBox="0 0 24 24"><path d="m12 3 1.9 5.8L20 11l-6.1 2.2L12 19l-1.9-5.8L4 11l6.1-2.2L12 3Z"/></svg> مساعدك الذكي للغة العربية</div>
     <h1>مرحبًا بك في <span>ضَابِط AI</span></h1>
     <p>أرسل نصك العربي، وسأساعدك في تشكيله بدقة مع مراعاة السياق وقواعد النحو والصرف.</p>
     <div class="suggestion-grid">
-      <button class="suggestion" data-prompt="ذهب الطالب الى المدرسة وقرأ كتابا مفيدا."><span class="suggestion-icon">عَ</span><b>شكّل نصًا بالكامل</b><small>أضف الحركات إلى جميع الكلمات</small><span class="suggestion-arrow">↙</span></button>
-      <button class="suggestion" data-prompt="إنما الأعمال بالنيات وإنما لكل امرئ ما نوى."><span class="suggestion-icon">ـُ</span><b>اضبط أواخر الكلمات</b><small>ركّز على الإعراب ونهايات الكلمات</small><span class="suggestion-arrow">↙</span></button>
-      <button class="suggestion" data-prompt="العلم نور والجهل ظلام."><span class="suggestion-icon">✧</span><b>جرّب مثالًا سريعًا</b><small>شاهد كيف يعمل ضابط AI</small><span class="suggestion-arrow">↙</span></button>
+      <button class="suggestion" data-prompt="ذهب الطالب الى المدرسة وقرأ كتابا مفيدا."><span class="suggestion-icon"><svg class="ui-icon" viewBox="0 0 24 24"><path d="M4 19h16M7 16l5-11 5 11m-8-5h6"/></svg></span><b>شكّل نصًا بالكامل</b><small>أضف الحركات إلى جميع الكلمات</small><span class="suggestion-arrow">↙</span></button>
+      <button class="suggestion" data-prompt="إنما الأعمال بالنيات وإنما لكل امرئ ما نوى."><span class="suggestion-icon"><svg class="ui-icon" viewBox="0 0 24 24"><path d="M5 7h14M5 12h14M5 17h9"/><path d="m16 15 2 2 3-4"/></svg></span><b>اضبط أواخر الكلمات</b><small>ركّز على الإعراب ونهايات الكلمات</small><span class="suggestion-arrow">↙</span></button>
+      <button class="suggestion" data-prompt="العلم نور والجهل ظلام."><span class="suggestion-icon"><svg class="ui-icon" viewBox="0 0 24 24"><path d="m12 3 1.9 5.8L20 11l-6.1 2.2L12 19l-1.9-5.8L4 11l6.1-2.2L12 3Z"/></svg></span><b>جرّب مثالًا سريعًا</b><small>شاهد كيف يعمل ضابط AI</small><span class="suggestion-arrow">↙</span></button>
     </div>
     <div class="welcome-note">يمكنك أيضًا لصق فقرة طويلة في مربع الكتابة أدناه.</div>
   </section>
